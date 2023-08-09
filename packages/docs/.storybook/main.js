@@ -14,9 +14,12 @@ const config = {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {}
   },
-  docs: {
-    autodocs: true
-  } // autodocs: "tag",
+  viteFinal: (config, { configType }) => {
+    if(configType === "PRODUCTION") {
+      config.base = "/it-ui/";
+    }
+    return config
+  }
 };
 
 export default config;
