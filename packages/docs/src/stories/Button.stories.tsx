@@ -7,8 +7,46 @@ export default {
   component: Button,
   args: {
     children: 'Primary',
+    variant: 'primary',
+    size: 'md',
+    disabled: false,
   },
   argTypes: {
+    variant: {
+      options: [
+        'primary',
+        'secondary',
+        'success',
+        'warning',
+        'danger',
+        'info',
+        'dark',
+        'link',
+        'primary-outline',
+        'secondary-outline',
+        'success-outline',
+        'warning-outline',
+        'danger-outline',
+        'info-outline',
+        'dark-outline',
+        'link-outline',
+        'light-outline',
+      ],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
     onClick: { action: 'click' },
   },
 } as Meta<ButtonProps>

@@ -6,7 +6,7 @@ export default {
   component: Avatar,
   args: {
     src: 'https://github.com/islanilton.png',
-    alt: 'Ilanilton',
+    alt: 'Islanilton',
   },
 } as Meta<AvatarProps>
 
