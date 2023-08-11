@@ -41,4 +41,8 @@ export const colors = <const>{
   yellow500: '#FFD23F',
 
   red500: '#EE4266',
+  red600: '#EF233C',
+  red800: '#D90429',
+
+  dark: '#2B2D42',
 }
